@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+      url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    background-color: #F9F9F9;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #272727;
+    background-image: url('/static/images/poster.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 100px);
+}
+p, a, label {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}
+
+a.nav-link, a {
+    color: #000000;
+
+}
+
+a.nav-link:hover, a:hover {
+    color: #000000;
+}
+.nav-pills a.nav-link.active {
+    background-color: #070707;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    color: #000000;
+}
+
+p.small {
+    font-size: 18px;
+    color: #000000;
+}
+.form-control-lg {
+    border-radius: 20px;
+
+}
+
+.form-control:focus {
+    background-color: #FFF;
+    border-color: #000000;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(125, 0, 0);
+  }
+
+textarea {
+    resize: none;
+}
+
+.button {
+    background-color: #000000;
+    border-radius: 30px;
+    color: #8a0303;
+    font-size: 30px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #8a0303;
+    color: #000000;
+}
+
+img.movie-image {
+    height: 700px;
+    width: 500px;
+}
+
+.text-block {
+    background-color: rgba(129, 70, 70, 0.922); /* Цвет фона */
+    padding: 15px; /* Отступы вокруг текста */
+    border-radius: 20px; /* Закругленные углы блока */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень блока */
+    max-width: 1120px; /* Максимальная ширина блока */
+}
+
+.text-block-header{
+    background-color: rgba(129, 70, 70, 0.922); /* Цвет фона */
+    padding: 15px; /* Отступы вокруг текста */
+    border-radius: 20px; /* Закругленные углы блока */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень блока */
+    margin-top: 10px; /* Отступ сверху */
+    margin-right: auto; /* Автоматический отступ справа */
+    margin-bottom: 15px; /* Отступ снизу */
+    margin-left: auto; /* Автоматический отступ слева */
+    max-width: 250px; /* Максимальная ширина блока */
+}
+
+
+
+@media (max-width: 600px) {
+    p {
+        text-align: justify;
+    }
+    h1 {
+        text-align: center;
+    }
+    .navbar-brand {
+        margin: 0 auto;
+    }
+}

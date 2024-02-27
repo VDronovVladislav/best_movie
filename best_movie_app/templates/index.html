@@ -1,0 +1,24 @@
+{% extends "base.html" %} 
+{% block content %}
+<main>
+  <section class="container my-5 text-block d-flex justify-content-center align-items-center" >
+      <div class="col-12 col-lg-7 my-5">
+        <h1 class="text-center">Лучший фильм всех времен и народов</h1>
+        <br>
+        <form class="text-center" action="{{ url_for('start_tournament') }}" method="post">
+          <div class="form-group">
+            <label for="filmCount">Количество фильмов:</label>
+            <br>
+            <br>
+            <select class="form-control" id="filmCount" name="filmCount">
+                <option value="32">32</option>
+                <option value="64">64</option>
+            </select>
+            <br>
+          </div>
+          <button type="submit" class="btn btn-primary button">Начать</button>
+        </form>
+    </div>
+  </section>
+</main>
+{% endblock %}

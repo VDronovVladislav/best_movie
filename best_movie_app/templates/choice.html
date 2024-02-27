@@ -1,0 +1,19 @@
+{% extends "base.html" %} 
+{% block content %}
+  <section class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center"> 
+        <form method="POST">
+          <button type="submit" name="chosen_film" value="{{ right_film.id }}" class="btn btn-primary button">{{ right_film.name }}</button>
+        </form>
+        <img src="{{ right_film.get_image_path() }}" alt="Right Movie Image" class="img-fluid mt-3 movie-image"> 
+      </div>
+      <div class="col-md-6 text-center"> 
+        <form method="POST">
+          <button type="submit" name="chosen_film" value="{{ left_film.id }}" class="btn btn-primary button">{{ left_film.name }}</button>
+        </form>
+        <img src="{{ left_film.get_image_path() }}" alt="Left Movie Image" class="img-fluid mt-3 movie-image"> 
+      </div>
+    </div>
+  </section>
+{% endblock %}
