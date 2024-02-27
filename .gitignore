@@ -134,3 +134,6 @@ dmypy.json
 
 #instance db
 instanse/
+
+# ненужный старый файл:
+123/
